@@ -1,0 +1,117 @@
+<ion-header>
+  <ion-navbar hideBackButton="true"> <!-- If you don't need back here -->
+    <button ion-button menuToggle start>
+      <ion-icon name="menu"></ion-icon>
+      </button>
+    
+    <ion-buttons end>
+      <span class="righttext-white"> > P 2500 </span>
+      <button ion-button (click)="presentPopover($event)">
+        <ion-icon name="md-more"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar> 
+  
+</ion-header>
+
+<ion-content>
+  <section class="banner">
+    <div class="bannerdiv">
+      <ion-grid class="no-padding">
+        <ion-row>
+          <ion-col width-30><img src="../assets/img/man.png" alt="man"></ion-col>
+          <ion-col width-70>
+            <p class="bannerdiv-text-white">25th June, 2016</p>
+            <p class="bannerdiv-text-blue">P 2,500</p>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+  </section>
+
+  <div class="">
+    <ion-segment [(ngModel)]="pet">
+      <ion-segment-button class="custom-segment-button" value="payment1">
+        Payments
+      </ion-segment-button>
+      <ion-segment-button class="custom-segment-button" value="payment2">
+        Payments
+      </ion-segment-button>
+      <ion-segment-button class="custom-segment-button" value="payment3">
+        Payments
+      </ion-segment-button>
+    </ion-segment>
+  </div>
+
+  <ion-card class="customcard-background">
+
+    <ion-card-header class="no-padding custom-card-header">
+      <ion-grid>
+        <ion-row>
+          <ion-col class="alignleft">25th June, 2016</ion-col>
+          <ion-col class="alignright">Pending</ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-header>
+
+    <ion-card-content class="no-padding">
+      <ion-grid class=nopaddingbottom>
+        <ion-row>
+          <ion-col width-30>
+            <img class="image" src="../assets/img/woman.png" alt="man">
+            <p class="usertext">User</p>
+          </ion-col>
+          <ion-col width-40 class="bluetext"> < 1500</ion-col>
+          <ion-col width-30>
+            <img class="image" src="../assets/img/man.png" alt="man">
+            <p class="usertext">User</p>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-content>
+
+    <ion-grid class="nopaddingbottom nopaddingtop">
+      <ion-row>
+        <ion-col class="nopaddingtop"><button (click)="goToProfile()" class="custom-button" ion-button>View</button></ion-col>
+        <ion-col class="nopaddingtop"><button (click)="goToHistory()" class="custom-button" ion-button>History</button></ion-col>
+      </ion-row>
+    </ion-grid>
+
+  </ion-card>
+
+    <ion-card class="customcard-background">
+
+    <ion-card-header class="no-padding custom-card-header">
+      <ion-grid>
+        <ion-row>
+          <ion-col class="alignleft">25th June, 2016</ion-col>
+          <ion-col class="alignright">Pending</ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-header>
+
+    <ion-card-content class="no-padding">
+      <ion-grid class=nopaddingbottom>
+        <ion-row>
+          <ion-col width-30>
+            <img class="image" src="../assets/img/woman.png" alt="man">
+            <p class="usertext">User</p>
+          </ion-col>
+          <ion-col width-40 class="bluetext"> < 1500</ion-col>
+          <ion-col width-30>
+            <img class="image" src="../assets/img/man.png" alt="man">
+            <p class="usertext">User</p>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-content>
+
+    <ion-grid class="nopaddingbottom nopaddingtop">
+      <ion-row>
+        <ion-col class="nopaddingtop"><button class="custom-button" ion-button>View</button></ion-col>
+        <ion-col class="nopaddingtop"><button class="custom-button" ion-button>History</button></ion-col>
+      </ion-row>
+    </ion-grid>
+
+  </ion-card>
+</ion-content>
