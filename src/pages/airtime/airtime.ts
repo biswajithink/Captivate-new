@@ -25,8 +25,7 @@ export class AirtimePage {
 presentLoading(){
         let loading = this.loadingCtrl.create({
         content: "<b>Payment Success</b>",
-        duration: 3000,
-        dismissOnPageChange: true,
+        duration: 3000
         });
         loading.present();
     }
@@ -35,22 +34,24 @@ presentLoading(){
      //push another page onto the history stack
     //causing the nav controller to animate the new page in
     this.navCtrl.push(PaymentsPage);
-}
-goToMerchants(){
-     //push another page onto the history stack
-    //causing the nav controller to animate the new page in
-    this.navCtrl.push(MerchantsPage);
-}
-goToAirtime(){
-     //push another page onto the history stack
-    //causing the nav controller to animate the new page in
-    this.navCtrl.push(AirtimePage);
-}
-
-presentPopover(myEvent) {
-    let popover = this.popoverCtrl.create(PopoverPage);
-    popover.present({
-      ev: myEvent
-    });
   }
+  goToMerchants(){
+      //push another page onto the history stack
+      //causing the nav controller to animate the new page in
+      this.navCtrl.push(MerchantsPage);
+  }
+  goToAirtime(){
+      //push another page onto the history stack
+      //causing the nav controller to animate the new page in
+      this.navCtrl.push(AirtimePage);
+  }
+
+  presentPopover(myEvent) {
+      let popover = this.popoverCtrl.create(PopoverPage);
+      popover.present({
+        ev: myEvent
+      });
+    }
+
+
 }

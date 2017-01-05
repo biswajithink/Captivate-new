@@ -14,7 +14,7 @@ import { PopoverPage } from '../popover/popover';
   templateUrl: 'makae-payment.html',
   //directives: [DragulaModule],
   //providers: [DragulaService],
-})
+}) 
 export class MakaePaymentPage {
    /*q1 = [];
     q2 = [];*/
