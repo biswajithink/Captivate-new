@@ -11,6 +11,8 @@ import { SettingsPage } from '../pages/settings/settings';
 import { ReportsPage } from '../pages/reports/reports';
 import { SettingshelpPage } from '../pages/settingshelp/settingshelp';
 
+import { LoginPage } from '../pages/login/login';
+
 
 
 @Component({
@@ -19,7 +21,8 @@ import { SettingshelpPage } from '../pages/settingshelp/settingshelp';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = Page1;
+  //rootPage: any = Page1;
+  rootPage: any = LoginPage;
 
   pages: Array<{title: string, component: any, menuicon: string}>;
   icons: Array<string>;

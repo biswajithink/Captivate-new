@@ -22,6 +22,10 @@ import { SettingshelpPage } from '../pages/settingshelp/settingshelp';
 import { MakaePaymentPage } from '../pages/makae-payment/makae-payment';
 import { TutorialsPage } from '../pages/tutorials/tutorials';
 import { CalculatorPage } from '../pages/calculator/calculator';
+import { LoginPage } from '../pages/login/login';
+import { RegistrationPage } from '../pages/registration/registration';
+
+
 
 
 
@@ -47,7 +51,9 @@ import { CalculatorPage } from '../pages/calculator/calculator';
     ReportsPage,
     ReportsContinuedPage,
     TutorialsPage,
-    CalculatorPage
+    CalculatorPage,
+    LoginPage,
+    RegistrationPage
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -74,7 +80,9 @@ import { CalculatorPage } from '../pages/calculator/calculator';
     ReportsPage,
     ReportsContinuedPage,
     TutorialsPage,
-    CalculatorPage
+    CalculatorPage,
+    LoginPage,
+    RegistrationPage
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
 })

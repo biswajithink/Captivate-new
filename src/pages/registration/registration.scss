@@ -1,0 +1,43 @@
+.registration_content{
+    background: #07336a url("../../assets/img/background-blue.png") repeat-y center top;
+    .list{
+        margin-top: 10%; 
+        .item{
+            background: none;
+            border: none !important;
+            padding-right: 16px; 
+            .item-inner{
+                border-bottom: 1px solid #c8c8c8 !important; 
+                color: #fff;
+            }
+        }
+        .item:first-child{
+            margin-bottom: 15px;
+        }
+    }
+    .login_div{
+        padding: 16px;
+        button{
+            display: block;
+            background: #2196f3;
+            color: #fff;
+            width: 100%;
+            border-radius:4px;
+            line-height: 30px;
+            font-size: 20px;
+            padding: 6px 0;
+        }
+        a{
+            display: inline-block;
+            text-align: center;
+            width: 49%;
+            vertical-align: top;
+            text-decoration: none;
+            color: #fff;
+            cursor: pointer;
+            line-height: 24px;
+            margin:15px auto;
+            font-size: 16px;
+        }
+    }
+}

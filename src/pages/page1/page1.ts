@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-import { NavController , NavParams, PopoverController } from 'ionic-angular';
+import { NavController , NavParams, PopoverController, ViewController } from 'ionic-angular';
 
 import { PopoverPage } from '../popover/popover';
 import { HistoryPage } from '../history/history';
@@ -13,7 +13,7 @@ import { ProfilePage } from '../profile/profile';
 })
 export class Page1 {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, public popoverCtrl: PopoverController) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public popoverCtrl: PopoverController, private viewCtrl: ViewController) {
     
   }
   goToProfile() {
@@ -29,7 +29,9 @@ export class Page1 {
   }
   
    
- 
+ /*ionViewWillEnter() {
+        this.viewCtrl.showBackButton(true);
+    }*/
 presentPopover(myEvent) {
     let popover = this.popoverCtrl.create(PopoverPage);
     popover.present({
