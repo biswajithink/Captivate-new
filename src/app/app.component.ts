@@ -40,7 +40,8 @@ export class MyApp {
       { title: 'Cash', component: CashCashoutPage, menuicon: 'md-cash'},
       { title: 'Settings', component: SettingsPage, menuicon: 'md-cog'},
       { title: 'Reports', component: ReportsPage, menuicon: 'ios-document'},
-      { title: 'Help', component: SettingshelpPage, menuicon: 'md-help'}
+      { title: 'Help', component: SettingshelpPage, menuicon: 'md-help'},
+      { title: 'Logout', component: LoginPage, menuicon: 'md-close'}
     ];
 
   }

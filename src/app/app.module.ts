@@ -87,6 +87,7 @@ import { RegistrationPage } from '../pages/registration/registration';
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
 })
 export class AppModule {
+  
  
 }
 

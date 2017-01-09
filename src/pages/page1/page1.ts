@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 
 import { NavController , NavParams, PopoverController, ViewController } from 'ionic-angular';
-
 import { PopoverPage } from '../popover/popover';
 import { HistoryPage } from '../history/history';
 import { ProfilePage } from '../profile/profile';
@@ -27,6 +26,7 @@ export class Page1 {
     //causing the nav controller to animate the new page in
     this.navCtrl.push(HistoryPage);
   }
+  
   
    
  /*ionViewWillEnter() {

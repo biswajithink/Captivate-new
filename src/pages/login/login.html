@@ -4,33 +4,37 @@
   See http://ionicframework.com/docs/v2/components/#navigation for more info on
   Ionic pages and navigation.
 -->
-<ion-menu [content]="content" persistent="true">
+
 <ion-header>
     
 </ion-header>
-</ion-menu>
 
 
-<ion-content class="login_content">
 
+<ion-content class="login_content" padding>
+<img src="../assets/img/login.png" class="login_img">
+<form>
   <ion-list>
-
+    
   <ion-item>
-    <ion-label floating>Username</ion-label>
-    <ion-input type="text"></ion-input>
+    <ion-icon ios="ios-person" md="md-person" item-left white></ion-icon>
+      <ion-input type="text" [(ngModel)]="username" name="username" placeholder="User Name *"></ion-input>      
+  </ion-item>  
+      <span class="error">{{msg}}</span>
+    <ion-item>
+      <ion-icon ios="ios-key" md="md-key" item-left white></ion-icon>
+      <ion-input type="password" [(ngModel)]="password" name="password" placeholder="Password *"></ion-input>      
   </ion-item>
+  <span class="error">{{msg1}}</span>
+  </ion-list>
+  <div class="login_div">
+  <button ion-button type="submit" (click)="goHome()">Login</button>
+  <button ion-button type="submit" (click)="goRegistration()">Create Account</button>
+  </div>
+  </form>
 
-  <ion-item>
-    <ion-label floating>Password</ion-label>
-    <ion-input type="password"></ion-input>
-  </ion-item>
 
-</ion-list>
-<div class="login_div">
-  <button block (click)="goHome()">Login</button>
-  <a>Forgot Password</a>
-  <a (click)="goRegistration()">Registration Now</a>
-</div>
+
 
 
 </ion-content>
