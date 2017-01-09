@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
-import { NavController, NavParams } from 'ionic-angular';
+import { NavController, NavParams, PopoverController } from 'ionic-angular';
+
+import { PopoverPage } from '../popover/popover';
 
 /*
   Generated class for the TransferContribute page.
@@ -13,10 +15,16 @@ import { NavController, NavParams } from 'ionic-angular';
 })
 export class TransferContributePage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {}
+  constructor(public navCtrl: NavController, public navParams: NavParams, public popoverCtrl: PopoverController) {}
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad TransferContributePage');
   }
 
+presentPopover(myEvent) {
+    let popover = this.popoverCtrl.create(PopoverPage);
+    popover.present({
+      ev: myEvent
+    });
+  }
 }
