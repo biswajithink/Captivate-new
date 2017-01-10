@@ -24,6 +24,8 @@ import { TutorialsPage } from '../pages/tutorials/tutorials';
 import { CalculatorPage } from '../pages/calculator/calculator';
 import { LoginPage } from '../pages/login/login';
 import { RegistrationPage } from '../pages/registration/registration';
+import { TransferAcceptedPage } from '../pages/transfer-accepted/transfer-accepted';
+import { TransferContributePage } from '../pages/transfer-contribute/transfer-contribute';
 
 
 
@@ -53,7 +55,9 @@ import { RegistrationPage } from '../pages/registration/registration';
     TutorialsPage,
     CalculatorPage,
     LoginPage,
-    RegistrationPage
+    RegistrationPage,
+    TransferAcceptedPage,
+    TransferContributePage
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -82,7 +86,9 @@ import { RegistrationPage } from '../pages/registration/registration';
     TutorialsPage,
     CalculatorPage,
     LoginPage,
-    RegistrationPage
+    RegistrationPage,
+    TransferAcceptedPage,
+    TransferContributePage
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
 })

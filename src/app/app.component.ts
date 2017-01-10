@@ -15,14 +15,18 @@ import { LoginPage } from '../pages/login/login';
 
 
 
+
+
+
+
 @Component({
   templateUrl: 'app.html'
 })
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  //rootPage: any = Page1;
-  rootPage: any = LoginPage;
+  rootPage: any = Page1;
+  
 
   pages: Array<{title: string, component: any, menuicon: string}>;
   icons: Array<string>;
