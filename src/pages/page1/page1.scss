@@ -54,13 +54,15 @@ body{
     text-transform: capitalize !important;
 }
 
-.segment-button.segment-activated{background: $green !important; border-radius: 0; color: $white !important;}
+.segment-button.segment-activated{background: $green !important; border-radius: 0px !important; color: $white !important; border-bottom: 2px solid #387ef5 !important;}
 
 .customcard-background{background: $lightgrey url("../assets/img/background-ash.png") repeat-y top; border: 1px solid #e0e0e0; margin-top: 20px; box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.3) !important;}
 
 .custom-card-header{border-bottom: 2px solid #e0e0e0; width : 95%; margin: 0 auto; font-family:'Lato Semibold'; color: $darkgrey;}
 
-.bluetext{text-align: center; color: $lightblue; font-size: 2.5rem; font-family:'Lato Semibold'; padding-top: 10%;}
+.bluetext{text-align: center; color: $lightblue; font-size: 2rem; font-family:'Lato Semibold'; padding-top: 10%;}
+.menubackground-home{background: #ececec !important;}
+
 
 .image{display: block; width: 50%; margin: 0 auto; border-radius: 50%;}
 
@@ -76,13 +78,13 @@ body{
 /*-------------Menu CSS--------------*/
 
 .custom-toolbar-background{background: $orange url("../assets/img/menuback.png") repeat-y !important;}
-.image-menu{display: block; width: 60%; margin: 0 auto; border-radius: 50%; padding: 30px 0;}
+.image-menu{display: block; width: 60%; margin: 0 auto; border-radius: 50%; margin: 30px auto; margin-bottom: 0px;}
 .favtext{font-family:'Lato Semibold'; color: $white; font-size: 2rem; text-align: right; padding-top: 15%;}
 .menubackground{background: $darkblue;}
 .subtext-menutoolbar{font-family: 'Lato Semibold'; font-size: 1.5rem; color: 
 $white; margin: 0; text-align: left;}
 .bannerdiv-text-white-menutoolbar {color: $white; margin: 0; font-family: 'Lato Semibold'; font-size: 2.8rem;}
-.span-toolbar{padding-top: 10%; padding-left: 5%; display: block; width: auto;}
+.span-toolbar{padding-top: 14%; padding-left: 5%; display: block; width: auto;}
 
 .menubackground-wrapper{width: 100%; overflow: hidden;}
 .menubackground ion-list {margin: 0; padding: 0;}

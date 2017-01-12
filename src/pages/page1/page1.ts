@@ -4,6 +4,7 @@ import { NavController , NavParams, PopoverController, ViewController } from 'io
 import { PopoverPage } from '../popover/popover';
 import { HistoryPage } from '../history/history';
 import { ProfilePage } from '../profile/profile';
+import { MakaePaymentPage } from '../makae-payment/makae-payment';
 
 
 @Component({
@@ -11,6 +12,10 @@ import { ProfilePage } from '../profile/profile';
   templateUrl: 'page1.html'
 })
 export class Page1 {
+
+  tabs: string = "favoutites";
+  isAndroid: boolean = false;
+
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public popoverCtrl: PopoverController, private viewCtrl: ViewController) {
     
@@ -27,7 +32,18 @@ export class Page1 {
     this.navCtrl.push(HistoryPage);
   }
   
-  
+  goToHistoryp() {
+    //push another page onto the history stack
+    //causing the nav controller to animate the new page in
+    this.navCtrl.push(HistoryPage);
+  }
+
+  goToMakaePayment(){
+     //push another page onto the history stack
+    //causing the nav controller to animate the new page in
+    this.navCtrl.push(MakaePaymentPage);
+}
+
    
  /*ionViewWillEnter() {
         this.viewCtrl.showBackButton(true);
