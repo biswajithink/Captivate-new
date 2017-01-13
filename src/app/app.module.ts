@@ -26,6 +26,8 @@ import { LoginPage } from '../pages/login/login';
 import { RegistrationPage } from '../pages/registration/registration';
 import { TransferAcceptedPage } from '../pages/transfer-accepted/transfer-accepted';
 import { TransferContributePage } from '../pages/transfer-contribute/transfer-contribute';
+//chart
+import { ChartsModule } from 'ng2-charts/ng2-charts';
 
 
 
@@ -59,7 +61,7 @@ import { TransferContributePage } from '../pages/transfer-contribute/transfer-co
     TransferAcceptedPage,
     TransferContributePage
   ],
-  imports: [
+  imports: [ChartsModule,
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],

@@ -21,7 +21,31 @@
 
 
 <ion-content>
+ <div class="line_chartDiv">
+    <canvas baseChart class="chart" 
+                [colors]="chartColors"
+                [data]="lineChartData"
+                [labels]="lineChartLabels"
+                [options]="lineChartOptions"
+                [chartType]="lineChartType"></canvas>
+  </div>
+  <div class="doughnut_chartDiv">
+  <canvas baseChart  class="chart chart-doughnut"
+                [data]="doughnutChartData"
+                [labels]="doughnutChartLabels"
+                [chartType]="doughnutChartType"
+                [colors]="doughnutChartColors">
+                
+  </canvas>
+  <span class="chart_cover chart_coverOne">{{doughnutChartData[3]}}<p>{{doughnutChartLabels[3]}}</p></span>
+  <span class="chart_cover chart_coverTwo">{{doughnutChartData[0]}}<p>{{doughnutChartLabels[0]}}</p></span>
+  <span class="chart_cover chart_coverThree">{{doughnutChartData[2]}}<p>{{doughnutChartLabels[2]}}</p></span>
+  <span class="chart_cover chart_coverFour">{{doughnutChartData[1]}}<p>{{doughnutChartLabels[1]}}</p></span>
+  <span class="chart_cover chart_coverTotal">{{doughnutChartData[0] + doughnutChartData[1] + doughnutChartData[2] + doughnutChartData[3]}}<p>Total</p></span>
+</div>
 
+
+<!--
   <section class="banner">
     <div class="bannerdiv">
       <ion-grid class="no-padding">
@@ -57,6 +81,8 @@
       </ion-col>
     </ion-row>         
   </ion-grid>
+
+  -->
     <ion-card class="customcard-background">
 
     <ion-card-header class="no-padding custom-card-header">

@@ -9,6 +9,7 @@ import { PopoverPage } from '../popover/popover';
   See http://ionicframework.com/docs/v2/components/#navigation for more info on
   Ionic pages and navigation.
 */
+//import * as $ from 'jquery';
 @Component({
   selector: 'page-makae-payment',
   templateUrl: 'makae-payment.html',
@@ -18,7 +19,6 @@ import { PopoverPage } from '../popover/popover';
 export class MakaePaymentPage {
    /*q1 = [];
     q2 = [];*/
-
   constructor(public navCtrl: NavController, public navParams: NavParams, public popoverCtrl: PopoverController/*, private dragulaService: DragulaService*/) {
 
      /*for (var i = 0; i < 20; i++) {
@@ -41,3 +41,20 @@ presentPopover(myEvent) {
     });
   }
 }
+
+/*
+<script type="text/javascript" src="assets/js/jquery.slideunlock.js"></script>
+    <script type="text/javascript">
+    $(function () {
+        var slider = new SliderUnlock(".slideunlock-slider", {}, function(){
+            alert('success');
+        }, function(){
+            $(".warn").text("index:" + slider.index + "， max:" + slider.max + ",lableIndex:" + slider.lableIndex + ",value:" + $(".slideunlock-lockable").val() + " date:" + new Date().getUTCDate());
+        });
+        slider.init();
+
+        $("#reset-btn").on('click', function(){
+            slider.reset();
+        });
+    })
+    </script>*/
